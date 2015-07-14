@@ -14,7 +14,17 @@ var autoprefix  = require('gulp-autoprefixer'),
     sass        = require('gulp-sass'),    
     stripDebug  = require('gulp-strip-debug'),
     uglify      = require('gulp-uglify'),
+    webserver   = require('gulp-webserver');
 
+// server
+gulp.task('webserver', function() {
+  gulp.src('src')
+    .pipe(webserver({
+      livereload: true,
+      directoryListing: true,
+      open: 'build/index.html'
+    }));
+});
 
 // SCSS to CSS
 gulp.task('styles', function() {
@@ -88,4 +98,8 @@ gulp.task('default', ['imagemin', 'htmlpage', 'scripts', 'styles'], function() {
   gulp.watch('./src/styles/*.scss', function() {
     gulp.run('styles');
   });
+});
+
+gulp.task('build', ['imagemin', 'htmlpage', 'scripts', 'styles'], function() {
+
 });
