@@ -1,1 +1,0 @@
-{"virtualbox":{"/var/www":{"guestpath":"/var/www","hostpath":"/Users/tsoikkel/dev/spbl.org/build","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/tsoikkel/dev/spbl.org","disabled":false}}}
