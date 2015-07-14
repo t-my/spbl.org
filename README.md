@@ -2,6 +2,13 @@
 
 ## Installation
 
-* Go into project folder and run **npm install**
-* Type **gulp** in root directory to run the default gulp task
-* Open **build/index.html** in browser
+* Download and install [Vagrant](https://www.google.com)
+* Download and install [Oracle VM VirtualBox](https://www.virtualbox.org/)
+* Open browser @ [http://localhost:8081](http://localhost:8081)
+
+## Stack
+
+* Vagrant
+* HTML5
+* Gulp
+* CMS?
