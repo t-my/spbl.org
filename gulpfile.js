@@ -1,33 +1,52 @@
 // Include gulp
-var gulp        = require('gulp'); 
- 
+var gulp        = require('gulp');
+
 
 // Include plug-ins
 var autoprefix  = require('gulp-autoprefixer'),
     browserify  = require('gulp-browserify');
     changed     = require('gulp-changed'),
     concat      = require('gulp-concat'),
-    imagemin    = require('gulp-imagemin'),
     jshint      = require('gulp-jshint'),
     minifyCSS   = require('gulp-minify-css');
     minifyHTML  = require('gulp-minify-html'),
-    sass        = require('gulp-sass'),    
+    sass        = require('gulp-sass'),
     stripDebug  = require('gulp-strip-debug'),
-    uglify      = require('gulp-uglify'),
-    webserver   = require('gulp-webserver');
+    uglify      = require('gulp-uglify');
 
-// server
-gulp.task('webserver', function() {
-  gulp.src('src')
-    .pipe(webserver({
-      livereload: true,
-      directoryListing: true,
-      open: 'build/index.html'
-    }));
+// Build site
+gulp.task('build', ['copyimages', 'copyhtml', 'scripts', 'scss', 'copyfonts']);
+
+// Default task: watch for changes.
+gulp.task('default', ['build'], function() {
+  // Watch for new/modified images
+  gulp.watch('./images/**/*', function() {
+    gulp.run('copyimages');
+  });
+
+  // Watch for HTML changes
+  gulp.watch('./src/*.html', function() {
+    gulp.run('copyhtml');
+  });
+
+  // Watch for JS changes
+  gulp.watch('./src/scripts/*.js', function() {
+    gulp.run('scripts');
+  });
+
+  // Watch for CSS changes
+  gulp.watch('./src/styles/*.scss', function() {
+    gulp.run('scss');
+  });
+
+  // Watch for new fonts
+  gulp.watch('./src/fonts/**/*.{ttf,woff,eof,svg}', function() {
+    gulp.run('copyfonts');
+  });
 });
 
 // SCSS to CSS
-gulp.task('styles', function() {
+gulp.task('scss', function() {
   return gulp.src('src/styles/**/*.scss')
     .pipe(sass())
     .pipe(gulp.dest('build/styles/'));
@@ -40,25 +59,22 @@ gulp.task('jshint', function() {
     .pipe(jshint.reporter('default'));
 });
 
-// Minify new images
-gulp.task('imagemin', function() {
+// Copy images
+gulp.task('copyimages', function() {
   var imgSrc = './src/images/**/*',
       imgDst = './build/images';
- 
+
   gulp.src(imgSrc)
     .pipe(changed(imgDst))
-    .pipe(imagemin())
     .pipe(gulp.dest(imgDst));
 });
 
-// Minify new or changed HTML pages
-gulp.task('htmlpage', function() {
+// Copy new or changed HTML pages to build
+gulp.task('copyhtml', function() {
   var htmlSrc = './src/*.html',
       htmlDst = './build';
- 
+
   gulp.src(htmlSrc)
-    .pipe(changed(htmlDst))
-    .pipe(minifyHTML())
     .pipe(gulp.dest(htmlDst));
 });
 
@@ -80,26 +96,4 @@ gulp.task('scripts', function() {
 gulp.task('copyfonts', function() {
    gulp.src('./src/fonts/**/*.{ttf,woff,eof,svg}')
    .pipe(gulp.dest('./build/fonts'));
-});
-
-
-gulp.task('default', ['imagemin', 'htmlpage', 'scripts', 'styles'], function() {
-  // Watch for HTML changes
-  gulp.watch('./src/*.html', function() {
-    gulp.run('htmlpage');
-  });
- 
-  // Watch for JS changes
-  gulp.watch('./src/scripts/*.js', function() {
-    gulp.run('jshint', 'scripts');
-  });
- 
-  // Watch for CSS changes
-  gulp.watch('./src/styles/*.scss', function() {
-    gulp.run('styles');
-  });
-});
-
-gulp.task('build', ['imagemin', 'htmlpage', 'scripts', 'styles'], function() {
-
 });
