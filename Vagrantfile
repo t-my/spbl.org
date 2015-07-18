@@ -20,7 +20,7 @@ Vagrant.configure(2) do |config|
      gulp build
      sudo rm -rf /var/www/html
      sudo ln -s /vagrant/build /var/www/html
-     sudo nophup gulp &
+     sudo nohup gulp &
   SHELL
 
 end
