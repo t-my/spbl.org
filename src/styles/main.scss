@@ -6,6 +6,7 @@ $dark-blue: #3E4A5A;
 $dark-gray: #737880;
 $light-gray: #ACB4BF;
 $whitey: #F6F6F6;
+$nav-space: 10em;
 
 .simple-list {
   list-style-type: none !important;
@@ -17,10 +18,11 @@ body {
   background: $whitey;
   color: $text-color;
   font-family: "Signika", serif;
+  .with-nav {
+    margin-top: $nav-space;
+  }
   #logo {
     height: 60px;
-  }
-  #navbar {
   }
   h5, h6 {
     font-family: "Muli", sans-serif;
@@ -50,8 +52,15 @@ body {
     color: #888;
   }  
   #hero {
-    padding: 3em;
+    background: url(../images/featured2.jpeg) no-repeat center -150px fixed;
+    background-size: cover;
+    padding: 3em 0 12em 0;
+    #identity {
+      height: 200px;
+    }
     h3 {
+      color: $brand-black;
+      text-shadow: 0 0 10px #fff;
       padding: 1.5em;
       text-align: center;
     }
@@ -59,12 +68,30 @@ body {
   .dropped {
     background: #ccc;
   }
+  .row { margin-top: 1.5em; }
+  h1 {
+    margin: 0.5em 0;
+    text-transform: uppercase;
+    border-bottom: 3px double black;
+  }
+  h1:first-letter{ 
+    background: $brand-black;
+    color: white;
+    padding: 0 3px;
+  }
+  .img-wrapper {
+    img {
+      border: 1.5em solid white;
+      max-width: 100%;
+      margin: 1.5em 0;
+    }
+  }
   .splash {
     position: relative;
     padding: 1.5em 3em 4.5em 3em;
     background: white;
-    box-shadow: 0 1px 3px rgba(155, 155, 155, 0.8);
-    border-radius: 1px;
+    box-shadow: 0 1px 2px rgba(155, 155, 155, 0.8);
+    border-radius: 3px;
     min-height: 412px;
     margin-bottom: 1em;
     .img-wrapper {
@@ -125,10 +152,50 @@ body {
     }
   }
 }
-
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .navbar-nav>li>a {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    #hero {
+      background: url(../images/featured2.jpeg) no-repeat center -300px fixed;
+      background-size: cover;
+      padding: 6em 0 20em 0;
+      h3 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    .navbar-header {
+      display: none;
+    }
+    .nav>li {
+      width: 50%;
+      display: inline-block;
+      float: left;
+    }
+    .navbar-nav {
+      margin: 0 -15px;
+    }
+    #hero {
+      background: url(../images/featured.jpeg) no-repeat -125px -50px fixed;
+      background-size: 300%;
+      /* Adjust first according to nav count */
+      padding: $nav-space 0 3em 0;
+      #identity {
+        height: 100px;
+      }
+      h3 {
+        font-size: 18px;
+        font-family: "Muli";
+        font-weight: bold;
+      }
+    }
   }
 }

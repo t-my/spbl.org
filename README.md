@@ -18,3 +18,4 @@ $ vagrant up
 * HTML5
 * Gulp
 * CMS?
+* Photography: [kpx](http://kpx.galleria.fi/kuvat/PiikkioSu/) ?
