@@ -18,9 +18,43 @@ body {
   background: $whitey;
   color: $text-color;
   font-family: "Signika", serif;
+  .btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;      
+    &:hover {
+      text-decoration: none;
+      color: $brand-black;
+    }
+    &:active {
+      position: relative;
+      top: 2px;
+    }
+  }
+  .btn-primary { background: $brand-blue;}
   .with-nav {
     margin-top: $nav-space;
   }
+  .author{
+    background: $brand-blue;
+    color: $whitey;
+    font-size: 18px;
+    display: inline-block;
+    padding: 15px 30px;
+    text-align: center;
+    float: right;
+    margin: 0 0 1.5em 1.5em;
+  }
+  .tags a {
+    background: $brand-blue;
+    color: $whitey;
+    margin: 0 1em 0 0;
+    padding: 0.5em 1em;
+  }  
   #logo {
     height: 60px;
   }
@@ -76,20 +110,16 @@ body {
   }
   h1:first-letter{ 
     background: $brand-black;
-    color: white;
+    color: $whitey;
     padding: 0 3px;
   }
-  .img-wrapper {
-    img {
-      border: 1.5em solid white;
-      max-width: 100%;
-      margin: 1.5em 0;
-    }
+  .img-responsive {
+    margin: 1.5em 0;
   }
   .splash {
     position: relative;
     padding: 1.5em 3em 4.5em 3em;
-    background: white;
+    background: $whitey;
     box-shadow: 0 1px 2px rgba(155, 155, 155, 0.8);
     border-radius: 3px;
     min-height: 412px;
@@ -119,11 +149,11 @@ body {
       bottom: 0;
       left: 0;
       width: 100%;
-      color: white;
+      color: $whitey;
       -webkit-transition: 0.3s ease-in-out;
       -moz-transition: 0.3s ease-in-out;
       -o-transition: 0.3s ease-in-out;
-      transition: 0.3s ease-in-out;      
+      transition: 0.3s ease-in-out; 
       &:hover {
         -webkit-transform: translate(3em,0);
         -moz-transform: translate(3em,0);
@@ -134,7 +164,7 @@ body {
         color: $brand-black;
       }
       .follow {
-        font-size: 2em;
+        font-size: 18px;
         line-height: 0;
         vertical-align: middle;
       }
@@ -161,7 +191,7 @@ body {
 @media screen and (min-width: 1280px) {
   body {
     #hero {
-      background: url(../images/featured2.jpeg) no-repeat center -300px fixed;
+      background: url(../images/featured2.jpeg) no-repeat center -225px fixed;
       background-size: cover;
       padding: 6em 0 20em 0;
       h3 {
@@ -183,6 +213,11 @@ body {
     .navbar-nav {
       margin: 0 -15px;
     }
+    .author {
+      display: block;
+      margin: 0 0 1.5em 0;
+      width: 100%;
+    }
     #hero {
       background: url(../images/featured.jpeg) no-repeat -125px -50px fixed;
       background-size: 300%;
@@ -193,8 +228,6 @@ body {
       }
       h3 {
         font-size: 18px;
-        font-family: "Muli";
-        font-weight: bold;
       }
     }
   }
