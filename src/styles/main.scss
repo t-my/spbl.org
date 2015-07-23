@@ -14,10 +14,12 @@ $nav-space: 10em;
 }
 
 body {
+  font-size: 15px;
   margin-top: 60px;
   background: $whitey;
   color: $text-color;
-  font-family: "Signika", serif;
+  font-family: "Muli", sans-serif;
+  h2, h3, h4, h5, h6 { font-family: "Kreon", serif; }
   .btn {
     font-size: 18px;
     padding: 10px 20px;
@@ -36,9 +38,7 @@ body {
     }
   }
   .btn-primary { background: $brand-blue;}
-  .with-nav {
-    margin-top: $nav-space;
-  }
+  .with-nav { margin-top: $nav-space; }
   .author{
     background: $brand-blue;
     color: $whitey;
@@ -55,16 +55,10 @@ body {
     margin: 0 1em 0 0;
     padding: 0.5em 1em;
   }  
-  #logo {
-    height: 60px;
-  }
-  h5, h6 {
-    font-family: "Muli", sans-serif;
-  }
+  #logo { height: 60px; }
   .navbar-default {
     box-shadow: none;
     border-bottom: 1px solid $light-gray;
-    font-family: "Muli", sans-serif;
     text-transform: uppercase;
   }
   .navbar-default .navbar-nav>li>a {
@@ -89,9 +83,7 @@ body {
     background: url(../images/featured2.jpeg) no-repeat center -150px fixed;
     background-size: cover;
     padding: 3em 0 12em 0;
-    #identity {
-      height: 200px;
-    }
+    #identity { height: 200px; }
     h3 {
       color: $brand-black;
       text-shadow: 0 0 10px #fff;
@@ -99,9 +91,7 @@ body {
       text-align: center;
     }
   }
-  .dropped {
-    background: #ccc;
-  }
+  .dropped { background: #ccc; }
   .row { margin-top: 1.5em; }
   h1 {
     margin: 0.5em 0;
@@ -112,15 +102,14 @@ body {
     background: $brand-black;
     color: $whitey;
     padding: 0 3px;
+    margin: 0 1px 0 0;
   }
-  .img-responsive {
-    margin: 1.5em 0;
-  }
+  .img-responsive { margin: 1.5em 0; }
   .splash {
     position: relative;
-    padding: 1.5em 3em 4.5em 3em;
+    padding: 1.5em 3em;
     background: $whitey;
-    box-shadow: 0 1px 2px rgba(155, 155, 155, 0.8);
+    border: 2px solid $brand-blue;
     border-radius: 3px;
     min-height: 412px;
     margin-bottom: 1em;
@@ -194,25 +183,39 @@ body {
       background: url(../images/featured2.jpeg) no-repeat center -225px fixed;
       background-size: cover;
       padding: 6em 0 20em 0;
-      h3 {
-        font-size: 30px;
-      }
+      h3 { font-size: 30px; }
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1920px) {
   body {
-    .navbar-header {
-      display: none;
+    #hero {
+      background: url(../images/featured2.jpeg) no-repeat center -400px fixed;
+      background-size: cover;
+      padding: 6em 0 20em 0;
+      h3 { font-size: 30px; }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    margin-top: 0;
+    .navbar-header { display: none; }
+    .with-nav { margin-top: 0; padding-top: 1.5em; }
+    .navbar-default {
+      position: static;
+      margin: 0;
+    }
+    .container {
+      padding-right: 5px;
+      padding-left: 5px;
     }
     .nav>li {
       width: 50%;
       display: inline-block;
       float: left;
     }
-    .navbar-nav {
-      margin: 0 -15px;
-    }
+    .navbar-nav { margin: 0 -15px; }
     .author {
       display: block;
       margin: 0 0 1.5em 0;
@@ -223,12 +226,8 @@ body {
       background-size: 300%;
       /* Adjust first according to nav count */
       padding: $nav-space 0 3em 0;
-      #identity {
-        height: 100px;
-      }
-      h3 {
-        font-size: 18px;
-      }
+      #identity { height: 100px; }
+      h3 { font-size: 18px; }
     }
   }
 }
