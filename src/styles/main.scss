@@ -57,6 +57,7 @@ body {
   }  
   #logo { height: 60px; }
   .navbar-default {
+    background: #FFF;
     box-shadow: none;
     border-bottom: 1px solid $light-gray;
     text-transform: uppercase;
@@ -107,8 +108,8 @@ body {
   .img-responsive { margin: 1.5em 0; }
   .splash {
     position: relative;
-    padding: 1.5em 3em;
-    background: $whitey;
+    padding: 1.5em 3em 4.5em 3em;
+    background: #FFF;
     border: 2px solid $brand-blue;
     border-radius: 3px;
     min-height: 412px;
@@ -205,11 +206,7 @@ body {
     .navbar-default {
       position: static;
       margin: 0;
-    }
-    .container {
-      padding-right: 5px;
-      padding-left: 5px;
-    }
+    }  
     .nav>li {
       width: 50%;
       display: inline-block;
