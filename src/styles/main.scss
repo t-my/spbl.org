@@ -8,13 +8,17 @@ $light-gray: #ACB4BF;
 $whitey: #F6F6F6;
 $nav-space: 10em;
 
+html {
+  font-size: 62.5%;
+}
+
 .simple-list {
   list-style-type: none !important;
   padding: 0.5em 0em;
 }
 
 body {
-  font-size: 15px;
+  font-size: 16px; font-size: 1.6rem;
   margin-top: 60px;
   background: $whitey;
   color: $text-color;
@@ -39,7 +43,7 @@ body {
   .author{
     background: $brand-blue;
     color: $whitey;
-    font-size: 18px;
+    font-size: 20px; font-size: 2rem;
     display: inline-block;
     padding: 15px 30px;
     text-align: center;
@@ -97,12 +101,6 @@ body {
     border-bottom: 3px double black;
     line-height: 1.333;
   }
-  h1:first-letter{
-    background: $brand-black;
-    color: $whitey;
-    padding: 0 3px;
-    margin: 0 1px 0 0;
-  }
   .img-responsive { margin: 1.5em 0; }
   .splash {
     position: relative;
@@ -152,7 +150,7 @@ body {
         color: $brand-black;
       }
       .follow {
-        font-size: 18px;
+        font-size: 20px; font-size: 2rem;
         line-height: 0;
         vertical-align: middle;
       }
@@ -182,7 +180,7 @@ body {
       background: url(../images/featured2.jpeg) no-repeat center -225px fixed;
       background-size: cover;
       padding: 6em 0 15em 0;
-      h3 { font-size: 30px; }
+      h3 { font-size: 30px; font-size: 3rem; }
     }
   }
 }
@@ -192,7 +190,7 @@ body {
       background: url(../images/featured2.jpeg) no-repeat center -400px fixed;
       background-size: cover;
       padding: 6em 0 13em 0;
-      h3 { font-size: 30px; }
+      h3 { font-size: 30px; font-size: 3rem; }
     }
   }
 }
@@ -222,7 +220,7 @@ body {
       /* Adjust first according to nav count */
       padding: $nav-space 0 3em 0;
       #identity { height: 100px; }
-      h3 { font-size: 18px; }
+      h3 { font-size: 20px; font-size: 2rem; }
     }
   }
 }
