@@ -17,6 +17,9 @@ Vagrant.configure(2) do |config|
      sudo npm install -g gulp
      cd /vagrant
      sudo npm install --no-bin-links
+     sudo npm install -g n
+     sudo n 0.10
+     npm rebuild node-sass
      gulp build
      sudo rm -rf /var/www/html
      sudo ln -s /vagrant/build /var/www/html
