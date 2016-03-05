@@ -6,23 +6,28 @@ $dark-blue: #3E4A5A;
 $dark-gray: #737880;
 $light-gray: #ACB4BF;
 $whitey: #F6F6F6;
-$nav-space: 10em;
+$nav-space: 7.5em;
 
 html {
   font-size: 62.5%;
 }
 
-.simple-list {
-  list-style-type: none !important;
-  padding: 0.5em 0em;
-}
-
 body {
+  #logo { height: 60px; }
   font-size: 16px; font-size: 1.6rem;
   margin-top: 60px;
   background: $whitey;
   color: $text-color;
-  font-family: "Asap", sans-serif;
+  font-family: "Lato", sans-serif;
+  h1, h2, h3, h4, h5, h6 {
+    color: $brand-black;
+    font-family: "Averia Sans Libre", sans-serif;
+  }
+  h1 {
+    font-size: 40px; font-size: 4rem;
+    margin: 0.5em 0 1em 0;
+    line-height: 1.333;
+  }
   .btn {
     border-radius: 2px;
     -webkit-transition: 0.3s ease-in-out;
@@ -39,6 +44,8 @@ body {
     }
   }
   .btn-primary { background: $brand-blue;}
+
+
   .with-nav { margin-top: $nav-space; }
   .author{
     background: $brand-blue;
@@ -56,57 +63,49 @@ body {
     margin: 0 1em 0 0;
     padding: 0.5em 1em;
   }
-  #logo { height: 60px; }
   .navbar-default {
     background: #FFF;
     box-shadow: none;
-    border-bottom: 1px solid $light-gray;
     text-transform: uppercase;
-  }
-  .navbar-default .navbar-nav>li>a {
-    color: $brand-black;
-    font-weight: bold;
-    text-shadow: none;
-  }
-  .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: $whitey;
-    background-color: $brand-blue;
-  }
-  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
-    background: $brand-black;
-    color: $whitey;
-    box-shadow: none;
-  }
-  .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    background: $brand-black;
-    color: #888;
+    .navbar-nav>li>a {
+      color: $brand-black;
+      font-weight: bold;
+      text-shadow: none;
+    }
+    .navbar-nav>li>a:focus, .navbar-nav>li>a:hover {
+      color: $whitey;
+      background-color: $brand-blue;
+    }
+    .navbar-nav>.active>a, .navbar-nav>.open>a {
+      background: $brand-black;
+      color: $whitey;
+      box-shadow: none;
+    }
+    .navbar-nav>.active>a:focus, .navbar-nav>.active>a:hover {
+      background: $brand-black;
+      color: #888;
+    }
   }
   #hero {
     background: url(../images/featured2.jpeg) no-repeat center -150px fixed;
     background-size: cover;
-    padding: 3em 0 13em 0;
+    padding: 3em 0 15em 0;
     #identity { height: 200px; }
     h3 {
-      color: $brand-black;
       text-shadow: 0 0 10px #fff;
       padding: 1.5em;
       text-align: center;
+      font-size: 30px; font-size: 3rem;
     }
   }
   .dropped { background: #ccc; }
   .row { margin-top: 1.5em; }
-  h1 {
-    margin: 0.5em 0;
-    text-transform: uppercase;
-    border-bottom: 3px double black;
-    line-height: 1.333;
-  }
   .img-responsive { margin: 1.5em 0; }
   .splash {
+    box-shadow: 0 1px 2px $light-gray;
     position: relative;
     padding: 1.5em 3em 4.5em 3em;
     background: #FFF;
-    border: 2px solid $brand-blue;
     border-radius: 3px;
     min-height: 412px;
     margin-bottom: 1em;
@@ -126,7 +125,7 @@ body {
       bottom: 0;
       left: 0;
       width: 100%;
-      background: $brand-blue;
+      background: $whitey;
       color: $brand-blue;
     }
     .continuum {
@@ -147,7 +146,7 @@ body {
         -ms-transform: translate(3em,0);
         transform: translate(3em,0);
         text-decoration: none;
-        color: $brand-black;
+        color: $brand-blue;
       }
       .follow {
         font-size: 20px; font-size: 2rem;
@@ -156,18 +155,24 @@ body {
       }
     }
   }
-  footer {
-    padding: 1.5em;
-    margin-top: 3em;
-    background: $dark-blue;
-    color: $whitey;
-    hr { border: 0; border-bottom: 3px double $brand-black;}
-    a {
-      color: $light-gray;
-      &:hover { color: $whitey; }
-    }
+}
+
+footer {
+  padding: 1.5em;
+  margin-top: 3em;
+  background: $dark-blue;
+  color: $whitey;
+  .simple-list {
+    list-style-type: none !important;
+    padding: 0.5em 0em;
+  }
+  hr { border: 0; border-bottom: 1px solid $brand-black;}
+  a {
+    color: $light-gray;
+    &:hover { color: $whitey; }
   }
 }
+
 @media screen and (min-width: 768px) {
   .navbar-nav>li>a {
     padding-top: 20px;
@@ -179,7 +184,7 @@ body {
     #hero {
       background: url(../images/featured2.jpeg) no-repeat center -225px fixed;
       background-size: cover;
-      padding: 6em 0 15em 0;
+      padding: 6em 0 20em 0;
       h3 { font-size: 30px; font-size: 3rem; }
     }
   }
@@ -221,6 +226,15 @@ body {
       padding: $nav-space 0 3em 0;
       #identity { height: 100px; }
       h3 { font-size: 20px; font-size: 2rem; }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    #hero {
+      padding: 3em 0;
+      background-size: 500%;
     }
   }
 }
