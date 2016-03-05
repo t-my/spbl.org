@@ -18,14 +18,13 @@ body {
   margin-top: 60px;
   background: $whitey;
   color: $text-color;
-  font-family: "Muli", sans-serif;
-  h2, h3, h4, h5, h6 { font-family: "Kreon", serif; }
+  font-family: "Asap", sans-serif;
   .btn {
     border-radius: 2px;
     -webkit-transition: 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;      
+    transition: 0.3s ease-in-out;
     &:hover {
       text-decoration: none;
       color: $brand-black;
@@ -52,7 +51,7 @@ body {
     color: $whitey;
     margin: 0 1em 0 0;
     padding: 0.5em 1em;
-  }  
+  }
   #logo { height: 60px; }
   .navbar-default {
     background: #FFF;
@@ -62,7 +61,7 @@ body {
   }
   .navbar-default .navbar-nav>li>a {
     color: $brand-black;
-    font-weight: bold;    
+    font-weight: bold;
     text-shadow: none;
   }
   .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
@@ -77,7 +76,7 @@ body {
   .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     background: $brand-black;
     color: #888;
-  }  
+  }
   #hero {
     background: url(../images/featured2.jpeg) no-repeat center -150px fixed;
     background-size: cover;
@@ -98,7 +97,7 @@ body {
     border-bottom: 3px double black;
     line-height: 1.333;
   }
-  h1:first-letter{ 
+  h1:first-letter{
     background: $brand-black;
     color: $whitey;
     padding: 0 3px;
@@ -129,7 +128,7 @@ body {
       bottom: 0;
       left: 0;
       width: 100%;
-      background: $brand-blue;  
+      background: $brand-blue;
       color: $brand-blue;
     }
     .continuum {
@@ -142,13 +141,13 @@ body {
       -webkit-transition: 0.3s ease-in-out;
       -moz-transition: 0.3s ease-in-out;
       -o-transition: 0.3s ease-in-out;
-      transition: 0.3s ease-in-out; 
+      transition: 0.3s ease-in-out;
       &:hover {
         -webkit-transform: translate(3em,0);
         -moz-transform: translate(3em,0);
         -o-transform: translate(3em,0);
         -ms-transform: translate(3em,0);
-        transform: translate(3em,0);        
+        transform: translate(3em,0);
         text-decoration: none;
         color: $brand-black;
       }
@@ -205,7 +204,7 @@ body {
     .navbar-default {
       position: static;
       margin: 0;
-    }  
+    }
     .nav>li {
       width: 50%;
       display: inline-block;
