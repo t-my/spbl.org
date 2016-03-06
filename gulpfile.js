@@ -15,8 +15,9 @@ var autoprefix  = require('gulp-autoprefixer'),
     uglify      = require('gulp-uglify');
 
 // Build site
-gulp.task('build', ['copyimages', 'copyhtml', 'scripts', 'scss', 'copyfonts']);
+gulp.task('build', ['copyimages', 'copyphp', 'scripts', 'scss', 'copyfonts', 'copywordpress']);
 
+// Clean
 // Default task: watch for changes.
 gulp.task('default', ['build'], function() {
   // Watch for new/modified images
@@ -24,9 +25,9 @@ gulp.task('default', ['build'], function() {
     gulp.run('copyimages');
   });
 
-  // Watch for HTML changes
-  gulp.watch('./src/*.html', function() {
-    gulp.run('copyhtml');
+  // Watch for PHP changes
+  gulp.watch('./src/**/*.php', function() {
+    gulp.run('copyphp');
   });
 
   // Watch for JS changes
@@ -70,12 +71,12 @@ gulp.task('copyimages', function() {
 });
 
 // Copy new or changed HTML pages to build
-gulp.task('copyhtml', function() {
-  var htmlSrc = './src/*.html',
-      htmlDst = './build';
+gulp.task('copyphp', function() {
+  var src = './src/**/*.php',
+      dest = './build';
 
-  gulp.src(htmlSrc)
-    .pipe(gulp.dest(htmlDst));
+  gulp.src(src)
+    .pipe(gulp.dest(dest));
 });
 
 // JS concat, strip debugging and minify
@@ -96,4 +97,10 @@ gulp.task('scripts', function() {
 gulp.task('copyfonts', function() {
    gulp.src('./src/fonts/**/*.{ttf,woff,eof,svg}')
    .pipe(gulp.dest('./build/fonts'));
+});
+
+// Copy wordpress files
+gulp.task('copywordpress', function() {
+  gulp.src('./wordpress/**/*')
+  .pipe(gulp.dest('./build'))
 });

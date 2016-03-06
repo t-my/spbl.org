@@ -9,11 +9,11 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <!-- Optional theme -->
-        <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <link rel="stylesheet" href="/styles/bootstrap.min.css">
         <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" >
         <link href="http://fonts.googleapis.com/css?family=Averia+Sans+Libre" rel="stylesheet" type="text/css" >
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="shortcut icon" href="images/favicon.ico" />
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="shortcut icon" href="/images/favicon.ico" />
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
             <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
@@ -26,62 +26,31 @@
         <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
-              <a href="index.html"><img id="logo" alt="spbl.org logo" src="images/logo-web.jpg"/></a>
+              <a href="index.html"><img id="logo" alt="spbl.org logo" src="/images/logo-web.jpg"/></a>
             </div>
             <div id="navbar" class="">
               <ul class="nav navbar-nav">
-                <li><a href="index.html">Etusivu</a></li>
-                <li><a href="sample.html">Lajista</a></li>
-                <li><a href="spbl.html">spbl.org</a></li>
-                <li><a href="blog.html">Tiedotteet</a></li>
-                <li class="active"><a href="events.html">Tapahtumat</a></li>
+                <li><a href="/">Etusivu</a></li>
+                <li><a href="/lajiesittely">Lajista</a></li>
+                <li><a href="/yhdistys">Yhdistys</a></li>
+                <li class="active"><a href="/tiedotteet">Tiedotteet</a></li>
+                <li><a href="/julkaisut">Julkaisut</a></li>
+                <li><a href="/tapahtumat">Tapahtumat</a></li>
+                <li><a href="/joukkueet">Joukkueet</a></li>
+                <li><a href="/yhteys">Yhteys</a></li>
               </ul>
             </div>
           </div>
         </nav>
-        <div class="container with-nav table-responsive">
-          <h1>Tapahtumat</h1>
-           <table class="table table-striped">
-            <thead>
-              <tr>
-                <th>Päivämäärä</th>
-                <th>Tapahtuma</th>
-                <th>Sijainti</th>
-                <th>Osallistumismaksu</th>
-                <th>Lisätietoa</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>23.08.2015</td>
-                <td>SM-kilpailut</td>
-                <td>Jyväskylä</td>
-                <td>30 € per sarja</td>
-                <td><a href="#">SM-kilpailut</a></td>
-              </tr>
-              <tr>
-                <td>12.11.2015</td>
-                <td>MM-kilpailut</td>
-                <td>Barcelona</td>
-                <td>250 € (Sisältää ruoan + majoituksen)</td>
-                <td><a href="#">IPBO.org</a></td>
-              </tr>
-              <tr>
-                <td>17.11.2015</td>
-                <td>Syysleiri</td>
-                <td>Paltamo</td>
-                <td>120 €</td>
-                <td>Mukaan mahtuu 50 ensimmäistä ilmoittautunutta</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="container with-nav">
+          <h1>Tiedotteet</h1>
         </div>
         <h2 role="presentation" class="eof text-center">&#8749;</h2>
         <footer>
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <a href="index.html"><img id="logo" alt="spbl.org logo" src="images/logo-web.jpg"/></a>
+                <a href="index.html"><img id="logo" alt="spbl.org logo" src="/images/logo-web.jpg"/></a>
                 <hr/>
                 <ul class="simple-list">
                   <li class="active"><a href="index.html">Etusivu</a></li>

@@ -9,11 +9,11 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <!-- Optional theme -->
-        <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <link rel="stylesheet" href="/styles/bootstrap.min.css">
         <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" >
         <link href="http://fonts.googleapis.com/css?family=Averia+Sans+Libre" rel="stylesheet" type="text/css" >
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="shortcut icon" href="images/favicon.ico" />
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="shortcut icon" href="/images/favicon.ico" />
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
             <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
@@ -26,28 +26,31 @@
         <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
-              <a href="index.html"><img id="logo" alt="spbl.org logo" src="images/logo-web.jpg"/></a>
+              <a href="index.html"><img id="logo" alt="spbl.org logo" src="/images/logo-web.jpg"/></a>
             </div>
             <div id="navbar" class="">
               <ul class="nav navbar-nav">
-                <li><a href="index.html">Etusivu</a></li>
-                <li><a href="sample.html">Lajista</a></li>
-                <li class="active"><a href="spbl.html">spbl.org</a></li>
-                <li><a href="blog.html">Tiedotteet</a></li>
-                <li><a href="events.html">Tapahtumat</a></li>
+                <li><a href="/">Etusivu</a></li>
+                <li><a href="/lajiesittely">Lajista</a></li>
+                <li><a href="/yhdistys">Yhdistys</a></li>
+                <li><a href="/tiedotteet">Tiedotteet</a></li>
+                <li class="active" ><a href="/julkaisut">Julkaisut</a></li>
+                <li><a href="/tapahtumat">Tapahtumat</a></li>
+                <li><a href="/joukkueet">Joukkueet</a></li>
+                <li><a href="/yhteys">Yhteys</a></li>
               </ul>
             </div>
           </div>
         </nav>
         <div class="container with-nav">
-         <div class="article">    <h1>SPBL eli Suomen Paintball-liitto</h1>   <h2>Historia</h2>   <p>   Suomen Paintball-liitto on perustettu vuonna 1998. Se perustettiin jatkamaan kotimaisen   paintball-sarjatoiminnan 1994 aloittanutta Suomen Paintball Liigan toimintaa. Liittoon    kuuluu noin kolmekymmentä seuraa ja lisenssipelaajia on vuosittain noin kolmesataa,   määrän kasvaessa hitaasti kausi kaudelta sarjojen laajentuessa. Paintballia harrastaa   Suomessa arviolta noin kymmenen tuhatta henkilöä.   </p>    <h2>Toiminta-ajatus</h2>    <p>   Suomen Paintball-liitto on maanlaajuinen kattojärjestö, joka vastaa maamme paintball-toiminnasta  ja sen kehittämisestä sekä harrastustoimintana että kilpaurheiluna. Kotimainen SM-liiga on yksi   maailman pisimpään säännöllisesti ja yhtäjaksoisesti toiminut kilpasarja. Paintball-järjestötoiminta  kestää myös hyvin kansainvälisen vertailun, sillä vastaavat liitot eivät ole saaneet kunnollista  jalansijaa muissa maissa Tanskaa lukuunottamatta.   </p>    <h2>Toiminnan päämäärät</h2>    <p>   Suomen Paintball-liiton tavoitteena on kasvattaa jäsenmäärää ja aktivoida harrastajia mukaan  liiton toimintaan tukemalla paikallisten jäsenseurojen toimintaa. Tämä antaa perusteet hakea    myöhemmin lajille virallista asemaa muiden Suomen urheilulajien joukkoon.   </p>  </div>
+          <h1>Julkaisut</h1>
         </div>
         <h2 role="presentation" class="eof text-center">&#8749;</h2>
         <footer>
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <a href="index.html"><img id="logo" alt="spbl.org logo" src="images/logo-web.jpg"/></a>
+                <a href="index.html"><img id="logo" alt="spbl.org logo" src="/images/logo-web.jpg"/></a>
                 <hr/>
                 <ul class="simple-list">
                   <li class="active"><a href="index.html">Etusivu</a></li>
@@ -66,8 +69,6 @@
             </div>
           </div>
         </footer>
-        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"><script>
         <!-- <script src="scripts/main.js"></script> -->
     </body>
 </html>
