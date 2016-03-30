@@ -15,11 +15,17 @@ var autoprefix  = require('gulp-autoprefixer'),
     uglify      = require('gulp-uglify');
 
 // Build site
-gulp.task('build', ['copyimages', 'copyphp', 'scripts', 'scss', 'copyfonts', 'copywordpress']);
+gulp.task('build', ['copyimages', 'copyphp', 'scripts', 'scss', 'copyfonts', 'copywordpress', 'copycss']);
 
 // Clean
 // Default task: watch for changes.
 gulp.task('default', ['build'], function() {
+
+  // Watch for new css files
+  gulp.watch('./styles/**/*.css', function() {
+    gulp.run('copycss');
+  });
+
   // Watch for new/modified images
   gulp.watch('./images/**/*', function() {
     gulp.run('copyimages');
@@ -58,6 +64,16 @@ gulp.task('jshint', function() {
   gulp.src('./src/scripts/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
+});
+
+// Copy static CSS
+gulp.task('copycss', function() {
+  var src = './src/styles/**/*.css',
+      dest = './build/styles';
+
+  gulp.src(src)
+    .pipe(changed(dest))
+    .pipe(gulp.dest(dest));
 });
 
 // Copy images

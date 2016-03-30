@@ -1,3 +1,6 @@
+<?php
+require('../wp-blog-header.php');
+?>
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
@@ -32,54 +35,54 @@
               <ul class="nav navbar-nav">
                 <li><a href="/">Etusivu</a></li>
                 <li><a href="/lajiesittely">Lajista</a></li>
-                <li><a href="/tiedotteet">Tiedotteet</a></li>
+                <li class="active"><a href="/tiedotteet">Tiedotteet</a></li>
                 <li><a href="/julkaisut">Julkaisut</a></li>
                 <li><a href="/tapahtumat">Tapahtumat</a></li>
                 <li><a href="/joukkueet">Joukkueet</a></li>
-                <li class="active"><a href="/yhteys">Yhteys</a></li>
+                <li><a href="/yhteys">Yhteys</a></li>
                 <li><a href="/lisenssi">Lisenssi</a></li>
-
               </ul>
             </div>
           </div>
         </nav>
-        <div class="container with-nav">
-          <h1>Yhteystiedot</h1>
-          <pre>
-Suomen Paintball-liitto Ry
-Ieskatu 13 A 1
-20210  TURKU
-
-kai.siltala@elisanet.fi
-FI16 1140 3000 4116 89 - Suomen Paintball Liitto ry
-          </pre>
-          <h2>Liittohallituksen puheenjohtaja</h2>
-          <p>Kai Siltala, Dream Team, p.0400-527 805, kai.siltala@elisanet.fi</p>
-          <h2>Hallituksen jäsnenet</h2>
-          <p>
-            Markku Nevala, Trivoga<br/>
-            Thomas Welin, PPW<br/>
-            Pertti Berg, Cyclone<br/>
-            Jesper Raevaara, Urho<br/>
-          </p>
-          <h2>Lisenssivastaava</h2>
-          <p>Markku Nevala /  marneva2@elisanet.fi / 040-5110 692</p>
-          <h2>Rahastonhoitaja</h2>
-          <p>Jyrki Åland / jyrki.ooland@jippii.fi / 044-2864782</p>
-          <h2>Tiedotusvastaava</h2>
-          <p>Paulus Parkatti / parkatti.paulus@gmail.com / 050 - 320 1947</p>
-          <h2>Verkkosivut</h2>
-          <p>Tuomas Soikkeli, tsoikkeli@gmail.com</p>
+        <div id="hero" style='background: url(../images/featured3.jpeg) no-repeat center -450px fixed; background-size: 100%;'>
         </div>
-        <h2 role="presentation" class="eof text-center">&#8749;</h2>
+
+        <div class="container table-responsive">
+          <h1>Tiedotteet</h1>
+
+          <p>Suomen Paintball liiton julkaisemat viralliset tiedotteet</p>
+
+
+            <table class="table table-striped">
+             <thead>
+               <tr>
+                 <th>Tiedote</th>
+                 <th>Julkaistu</th>
+               </tr>
+             </thead>
+             <tbody>
+               <?php
+               $args = array('post_type' => 'tiedotteet');
+               $all_posts = get_posts( $args );
+               foreach( $all_posts as $post ){
+                 echo '<tr>';
+                 echo '<td><a href="/tiedotteet/?tiedote=' . get_the_ID($post) . '">' . get_the_title($post) . '</a></td>';
+                 echo '<td>' . get_the_date("d.m.Y ", $post) . '</td>';
+                 echo '</tr>';
+               } ?>
+             </tbody>
+           </table>
+       </div>
+        </div>
         <footer>
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <a href=""><img id="logo" alt="spbl.org logo" src="/images/logo-web.jpg"/></a>
+                <a href="/"><img id="logo" alt="spbl.org logo" src="/images/logo-web.jpg"/></a>
                 <hr/>
                 <ul class="simple-list">
-                  <li><a href="/">Etusivu</a></li>
+                  <li class="active"><a href="/">Etusivu</a></li>
                   <li><a href="sample.html">Lajista</a></li>
                   <li><a href="#spbl">Suomen Paintball-liitto</a></li>
                   <li><a href="#news">Tiedotteet</a></li>

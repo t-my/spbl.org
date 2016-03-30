@@ -29,18 +29,18 @@ require('./wp-blog-header.php');
         <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
-              <a href="index.html"><img id="logo" alt="spbl.org logo" src="images/logo-web.jpg"/></a>
+              <a href="/"><img id="logo" alt="spbl.org logo" src="images/logo-web.jpg"/></a>
             </div>
             <div id="navbar" class="">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="/">Etusivu</a></li>
                 <li><a href="/lajiesittely">Lajista</a></li>
-                <li><a href="/yhdistys">Yhdistys</a></li>
                 <li><a href="/tiedotteet">Tiedotteet</a></li>
                 <li><a href="/julkaisut">Julkaisut</a></li>
                 <li><a href="/tapahtumat">Tapahtumat</a></li>
                 <li><a href="/joukkueet">Joukkueet</a></li>
                 <li><a href="/yhteys">Yhteys</a></li>
+                <li><a href="/lisenssi">Lisenssi</a></li>
               </ul>
             </div>
           </div>
@@ -75,11 +75,12 @@ require('./wp-blog-header.php');
                   $args = array('post_type' => 'tiedotteet');
                   $recent_posts = wp_get_recent_posts($args);
                   foreach( $recent_posts as $recent ){
-                    echo '<li><a href="' . get_permalink($recent["ID"]) . '">' . get_the_date("m/Y ",$recent ) .  $recent["post_title"].'</a> </li> ';
+                    $date = new DateTime($recent["post_date"]);
+                    echo '<li><a href=/tiedotteet/?tiedote=' . $recent["ID"] . '>' . $date->format('m/Y ') . $recent["post_title"].'</a> </li> ';
                   } ?>
                   </ul>
                 <span class="continuum-bg"><h4>&nbsp;</h4></span>
-                <a class="continuum" href="/kaikki-tiedotteet"><h4>Kaikki tiedotteet <span class="follow">&#10163;</span></h4></a>
+                <a class="continuum" href="/tiedotteet"><h4>Kaikki tiedotteet <span class="follow">&#10163;</span></h4></a>
               </div>
             </div>
             <div class="col-md-6">
@@ -96,16 +97,26 @@ require('./wp-blog-header.php');
               </div>
             </div>
           </div>
+          <div class="container row">
+          <h2>Missä voin kokeilla paintballia?</h2>
+
+          <p>Suomessa toimii useita paintballiin erikoistuneita yrityksiä, jotka vuokraavat varusteita. Löydät useita vuokraamoja <a href="http://www.paintball.fi/vuokraamot">paintball.fi</a> palvelun kautta. Kilpailutoimintaan pääset parhaiten mukaan ottamalla yhteyden Suomen Paintball liiton alla toimiviin joukkuesiin. <a href="/joukkueet">Joukkueet</a> -sivuilta löydät yhteystiedot paikalliseen joukkueeseesi.</p>
+
+          <h2>Yhdistys</h2>
+
+          <p>Suomen Paintball-liitto on perustettu vuonna 1998. Se perustettiin jatkamaan kotimaisen paintball-sarjatoiminnan 1994 aloittanutta Suomen Paintball Liigan toimintaa. Liittoon kuuluu noin kolmekymmentä seuraa ja lisenssipelaajia on vuosittain noin kolmesataa, määrän kasvaessa hitaasti kausi kaudelta sarjojen laajentuessa. Paintballia harrastaa Suomessa arviolta noin kymmenen tuhatta henkilöä.</p>
+          <p>Suomen Paintball-liitto on maanlaajuinen kattojärjestö, joka vastaa maamme paintball-toiminnasta ja sen kehittämisestä sekä harrastustoimintana että kilpaurheiluna. Kotimainen SM-liiga on yksi maailman pisimpään säännöllisesti ja yhtäjaksoisesti toiminut kilpasarja. Paintball-järjestötoiminta kestää myös hyvin kansainvälisen vertailun, sillä vastaavat liitot eivät ole saaneet kunnollista jalansijaa muissa maissa Tanskaa lukuunottamatta.</p>
+          <p>Suomen Paintball-liiton tavoitteena on kasvattaa jäsenmäärää ja aktivoida harrastajia mukaan liiton toimintaan tukemalla paikallisten jäsenseurojen toimintaa. Tämä antaa perusteet hakea myöhemmin lajille virallista asemaa muiden Suomen urheilulajien joukkoon.</p>
+          </div>
 
         <footer>
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <a href="index.html"><img id="logo" alt="spbl.org logo" src="/images/logo-web.jpg"/></a>
+                <a href="/"><img id="logo" alt="spbl.org logo" src="/images/logo-web.jpg"/></a>
                 <ul class="simple-list">
                   <li class="active"><a href="/">Etusivu</a></li>
                   <li><a href="/lajiesittely">Lajista</a></li>
-                  <li><a href="/yhdistys">Yhdistys</a></li>
                   <li><a href="/tiedotteet">Tiedotteet</a></li>
                   <li><a href="/julkaisut">Julkaisut</a></li>
                   <li><a href="/tapahtumat">Tapahtumat</a></li>

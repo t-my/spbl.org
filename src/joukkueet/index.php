@@ -26,34 +26,35 @@
         <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
-              <a href="index.html"><img id="logo" alt="spbl.org logo" src="/images/logo-web.jpg"/></a>
+              <a href="/"><img id="logo" alt="spbl.org logo" src="/images/logo-web.jpg"/></a>
             </div>
             <div id="navbar" class="">
               <ul class="nav navbar-nav">
                 <li><a href="/">Etusivu</a></li>
                 <li><a href="/lajiesittely">Lajista</a></li>
-                <li><a href="/yhdistys">Yhdistys</a></li>
                 <li><a href="/tiedotteet">Tiedotteet</a></li>
                 <li><a href="/julkaisut">Julkaisut</a></li>
                 <li><a href="/tapahtumat">Tapahtumat</a></li>
                 <li  class="active" ><a href="/joukkueet">Joukkueet</a></li>
                 <li><a href="/yhteys">Yhteys</a></li>
+                <li><a href="/lisenssi">Lisenssi</a></li>
               </ul>
             </div>
           </div>
         </nav>
         <div class="container with-nav">
           <h1>Joukkueet</h1>
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=zBsLyxF9IOkY.kdfCevcIiOLs" width="90%" height="600px"></iframe>
         </div>
         <h2 role="presentation" class="eof text-center">&#8749;</h2>
         <footer>
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <a href="index.html"><img id="logo" alt="spbl.org logo" src="/images/logo-web.jpg"/></a>
+                <a href="/"><img id="logo" alt="spbl.org logo" src="/images/logo-web.jpg"/></a>
                 <hr/>
                 <ul class="simple-list">
-                  <li><a href="index.html">Etusivu</a></li>
+                  <li><a href="/">Etusivu</a></li>
                   <li><a href="sample.html">Lajista</a></li>
                   <li><a href="#spbl">Suomen Paintball-liitto</a></li>
                   <li><a href="#news">Tiedotteet</a></li>
