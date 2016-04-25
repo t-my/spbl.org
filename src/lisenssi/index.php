@@ -66,7 +66,7 @@
         <p>Huom. Hoitokulujen korvaamisen edellytyksenä on, että tutkimus ja hoito on aloitettu Suomessa ja ovat lääkärin määräämiä.</p>
 
         <h2>Lisenssityypit</h2>
-        <p>Vakuutuskausi: 1.5. - 31.3.</p>
+        <p>Vakuutuskausi: 1.5.2016 - 31.3.2017</p>
 
         <h3>A-lisenssi, hinta 55€, <b>yli</b> 16-vuotiaat</h3>
 
