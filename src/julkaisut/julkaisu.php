@@ -1,3 +1,6 @@
+<?php
+require('../wp-blog-header.php');
+?>
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
@@ -42,11 +45,17 @@
             </div>
           </div>
         </nav>
+        <div id="hero" style='background: url(../images/featured.jpeg) no-repeat center -350px fixed; background-size: 100%;'>
+
+          <div class="col-md-8 col-md-offset-2">
+          <h3>Suomessa kisapaintballia pelataan tasoilla SM-liigasta 3.divisioonaan ja erilaisia turnauksia järjestetään vuosittain noin kymmenkunta. SPBL:n alaisissa sarjoissa pelasi kaudella 2012 yhteensä noin 40 joukkuetta.</h3>
+          </div>
+        </div>
         <div class="container with-nav">
           <?php
           $post = get_post( $_GET['julkaisu'] );
           echo '<h1>' . $post->post_title .'</h1>';
-          echo $post->post_content;
+          echo wpautop($post->post_content);
           ?>
         </div>
         <h2 role="presentation" class="eof text-center">&#8749;</h2>

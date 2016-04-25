@@ -64,7 +64,7 @@ require('../wp-blog-header.php');
                $all_posts = get_posts( $args );
                foreach( $all_posts as $post ){
                  echo '<tr>';
-                 echo '<td><a href="/tiedotteet/?tiedote=' . get_the_ID($post) . '">' . get_the_title($post) . '</a></td>';
+                 echo '<td><a href="/julkaisut/?julkaisu=' . get_the_ID($post) . '">' . get_the_title($post) . '</a></td>';
                  echo '<td>' . get_the_modified_date("d.m.Y ", $post) . '</td>';
                  echo '<td>' . get_the_date("d.m.Y ", $post) . '</td>';
 

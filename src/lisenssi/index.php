@@ -66,7 +66,7 @@
         <p>Huom. Hoitokulujen korvaamisen edellytyksenä on, että tutkimus ja hoito on aloitettu Suomessa ja ovat lääkärin määräämiä.</p>
 
         <h2>Lisenssityypit</h2>
-        <p>Vakuutuskausi: 1.5.2016 - 31.3.2017</p>
+        <p>Vakuutuskausi: 1.5. - 31.3.</p>
 
         <h3>A-lisenssi, hinta 55€, <b>yli</b> 16-vuotiaat</h3>
 
@@ -77,14 +77,7 @@
         <h3>Kertavakuutus/lisenssi: hinta 15€, sekä alle 16, että 16 vuotta täyttäneet</h3>
 
         <p>
-          Lisenssit sisältävät:
-        <ul>
-          <li>pelioikeus Suomen Paintball liiton sarjoissa
-          <li>kertakorvaus pysyvästä, täydestä haitasta 30.000€ (ei C-lisenssi)
-          <li>kertakorvaus tapaturmaisesta kuolemasta 8.500€ (ei C-lisenssi)
-          <li>tapaturman hoitokulut, siltä osin kuin niitä ei korvata jonkin lain nojalla 8.500 € (ei C-lisenssi)
-          <li>kertavakuutus voimassa perjantai - sunnuntai (3 vrk). Ostaessasi kertavakuutusta  merkitse päivämäärät joina vakuutus on voimassa!
-        </ul>
+          Tarkista lisenssin sisältö tilatessasi lisenssiä VALO:n sivustolta.
         </p>
 
 
@@ -97,9 +90,9 @@
         <p>Lisenssit tulee olla maksettuina jokaista SPBL:n kierrosta edeltävänä keskiviikko iltana klo 18.00 mennessä, jolloin ohjelmasta ajetaan maksaneiden nimilistat. Mikäli maksaa keskiviikon jälkeen, tulee toimittaa paperikuitti Kapteenien kokoukseen pelaajalistan mukana.</p>
 
         <p>Pelaajalla oltava voimassa oleva <b>urheiluvakuutus</b> valitsemastaan
-        vakuutusyhtiöstä. Pelkkä vapaa-ajan tapaturmavakuutus ei kelpaa, sillä
-        vakuutusyhtiöt eivät korvaa tapaturmia lisenssin vaatimissa
-        urheilulajeissa. Mikäli käytät oman vakutuusyhtiösi urheiluvakuutusta, toimita kopio voimassa olevasta vakuutuskirjasta lisenssivastaavalle ennen kauden ensimmäistä kierrosta edeltävää keskiiviikkona. Voit toimittaa vakuutuskirjan pdf-tiedostona Markku Nevalalle osoitteeseen
+        vakuutusyhtiästä. Pelkkä vapaa-ajan tapaturmavakuutus ei kelpaa, sillä
+        vakuutusyhtiät eivät korvaa tapaturmia lisenssin vaatimissa
+        urheilulajeissa. Mikäli käytät oman vakutuusyhtiäsi urheiluvakuutusta, toimita kopio voimassa olevasta vakuutuskirjasta lisenssivastaavalle ennen kauden ensimmäistä kierrosta edeltävää keskiiviikkona. Voit toimittaa vakuutuskirjan pdf-tiedostona Markku Nevalalle osoitteeseen
         <a href="mailto:marneva2@elisanet.fi?Subjet=Vakuutuskirja" target="_top">marneva2@elisanet.fi</a></p>
 
         <p>Lisätietoja tarvittaessa lisenssivastaavalta:</p>
