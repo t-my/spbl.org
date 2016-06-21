@@ -3,21 +3,30 @@ var gulp        = require('gulp');
 
 
 // Include plug-ins
-var autoprefix  = require('gulp-autoprefixer'),
-    browserify  = require('gulp-browserify');
-    changed     = require('gulp-changed'),
-    concat      = require('gulp-concat'),
-    jshint      = require('gulp-jshint'),
-    minifyCSS   = require('gulp-minify-css');
-    minifyHTML  = require('gulp-minify-html'),
-    sass        = require('gulp-sass'),
-    stripDebug  = require('gulp-strip-debug'),
-    uglify      = require('gulp-uglify');
+var autoprefix    = require('gulp-autoprefixer'),
+    browserify    = require('gulp-browserify');
+    changed       = require('gulp-changed'),
+    concat        = require('gulp-concat'),
+    jshint        = require('gulp-jshint'),
+    minifyCSS     = require('gulp-minify-css');
+    minifyHTML    = require('gulp-minify-html'),
+    sass          = require('gulp-sass'),
+    stripDebug    = require('gulp-strip-debug'),
+    uglify        = require('gulp-uglify'),
+    entityconvert = require('gulp-entity-convert');
 
 // Build site
-gulp.task('build', ['copyimages', 'copyphp', 'scripts', 'scss', 'copyfonts', 'copywordpress', 'copycss']);
+gulp.task('build', 
+  [ 'copyimages', 
+    'copyphp', 
+    'scripts', 
+    'scss', 
+    'copyfonts', 
+    'copywordpress', 
+    'copycss']);
 
-// Clean
+
+
 // Default task: watch for changes.
 gulp.task('default', ['build'], function() {
 
@@ -92,6 +101,7 @@ gulp.task('copyphp', function() {
       dest = './build';
 
   gulp.src(src)
+    .pipe(entityconvert())
     .pipe(gulp.dest(dest));
 });
 
