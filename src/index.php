@@ -90,7 +90,7 @@ require('./wp-blog-header.php');
                 $args = array('post_type' => 'tapahtumat');
                 $recent_posts = wp_get_recent_posts($args);
                 foreach( $recent_posts as $recent ){
-                  echo '<li><a href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"].'</a> </li> ';
+                  echo '<li><a href=/tapahtumat/?tapahtuma=' . $recent["ID"] . '>' . $recent["post_title"] . '</a> </li>';
                 } ?>
                 <span class="continuum-bg"><h4>&nbsp;</h4></span>
                 <a class="continuum" href="/tapahtumat"><h4>Arkisto <span class="follow">&#10163;</span></h4></a>
