@@ -46,7 +46,9 @@ require('../wp-blog-header.php');
           </div>
         </nav>
         <div id="hero" style='background: url(../images/featured4.jpeg) no-repeat center -450px fixed; background-size: 100%;'>
-
+          <div class="col-md-8 col-md-offset-2">
+          <h3>Suomen Paintball-liiton viralliset julkaisut.</h3>
+          </div>
         </div>
         <div class="container">
           <h1>Julkaisut</h1>
