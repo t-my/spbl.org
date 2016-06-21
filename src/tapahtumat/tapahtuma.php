@@ -49,7 +49,7 @@ require('../wp-blog-header.php');
           <?php
           $post = get_post( $_GET['tapahtuma'] );
           echo '<h1>' . $post->post_title .'</h1>';
-          echo $post->post_content;
+          echo wpautop($post->post_content);
           ?>
         </div>
         <h2 role="presentation" class="eof text-center">&#8749;</h2>

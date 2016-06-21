@@ -69,7 +69,11 @@ FI16 1140 3000 4116 89 - Suomen Paintball Liitto ry
           <h2>Tiedotusvastaava</h2>
           <p>Paulus Parkatti / parkatti.paulus@gmail.com / 050 - 320 1947</p>
           <h2>Verkkosivut</h2>
-          <p>Tuomas Soikkeli, tsoikkeli@gmail.com</p>
+          <p>
+            Tuomas Soikkeli, tsoikkeli@gmail.com<br/>
+            Lähdekoodi on saativilla osoitteesta <a href="https://github.com/t-my/spbl.org">https://github.com/t-my/spbl.org</a>
+          </p>
+
         </div>
         <h2 role="presentation" class="eof text-center">&#8749;</h2>
         <footer>
