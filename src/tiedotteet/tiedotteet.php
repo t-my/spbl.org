@@ -46,12 +46,14 @@ require('../wp-blog-header.php');
           </div>
         </nav>
         <div id="hero" style='background: url(../images/featured3.jpeg) no-repeat center -450px fixed; background-size: 100%;'>
+          <div class="col-md-8 col-md-offset-2">
+          <h3>Suomen Paintball liiton julkaisemat viralliset tiedotteet</h3>
+          </div>
         </div>
 
         <div class="container table-responsive">
           <h1>Tiedotteet</h1>
 
-          <p>Suomen Paintball liiton julkaisemat viralliset tiedotteet</p>
 
 
             <table class="table table-striped">
