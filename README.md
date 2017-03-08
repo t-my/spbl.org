@@ -17,5 +17,5 @@ $ vagrant up
 * Vagrant
 * HTML5
 * Gulp
-* CMS?
+* Wordpress
 * Photography: [kpx](http://kpx.galleria.fi/kuvat/PiikkioSu/) ?
