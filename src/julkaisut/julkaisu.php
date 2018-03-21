@@ -4,6 +4,7 @@ require('../wp-blog-header.php');
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
+	<?php include('../analytics.php'); ?>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>spbl.org</title>
@@ -48,7 +49,7 @@ require('../wp-blog-header.php');
         <div id="hero" style='background: url(../images/featured.jpeg) no-repeat center -350px fixed; background-size: 100%;'>
 
           <div class="col-md-8 col-md-offset-2">
-          <h3>Suomessa kisapaintballia pelataan tasoilla SM-liigasta 3.divisioonaan ja erilaisia turnauksia järjestetään vuosittain noin kymmenkunta. SPBL:n alaisissa sarjoissa pelasi kaudella 2012 yhteensä noin 40 joukkuetta.</h3>
+          <h3>Suomessa kisapaintballia pelataan tasoilla SM-liigasta 3.divisioonaan ja erilaisia turnauksia j&#228;rjestet&#228;&#228;n vuosittain noin kymmenkunta. SPBL:n alaisissa sarjoissa pelasi kaudella 2012 yhteens&#228; noin 40 joukkuetta.</h3>
           </div>
         </div>
         <div class="container with-nav">
@@ -59,29 +60,7 @@ require('../wp-blog-header.php');
           ?>
         </div>
         <h2 role="presentation" class="eof text-center">&#8749;</h2>
-         <footer>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <a href="/"><img id="logo" alt="spbl.org logo" src="/images/logo-web.jpg"/></a>
-                <ul class="simple-list">
-                  <li class="active"><a href="/">Etusivu</a></li>
-                  <li><a href="/lajiesittely">Lajista</a></li>
-                  <li><a href="/tiedotteet">Tiedotteet</a></li>
-                  <li><a href="/julkaisut">Julkaisut</a></li>
-                  <li><a href="/tapahtumat">Tapahtumat</a></li>
-                  <li><a href="/joukkueet">Joukkueet</a></li>
-                  <li><a href="/yhteys">Yhteys</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-2 right">
-                spbl.org &copy; 2016
-              </div>
-            </div>
-          </div>
-        </footer>
+	<?php include('../footer.php');?>
         <!-- <script src="scripts/main.js"></script> -->
     </body>
 </html>

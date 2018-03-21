@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
+	<?php include('../analytics.php'); ?>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>spbl.org</title>
@@ -45,57 +46,64 @@
         <div class="container with-nav">
 
         <h1>Suomen Paintball liiton lisenssit</h1>
-
-        <p> Suomen Paintball Liitto ry tarjoaa yhteistyössä vakuutusyhtiö Pohjolan sekä VALO:n kanssa pelaajille
-        urheiluvakuutukset. <p>
-
         <h3>Miten ostan lisenssin?</h3>
-
         <ol>
-          <li>Lisenssin löydät osoitteesta: <a href="https://lisenssi.sportti.fi/index.php?lid=20335"> https://lisenssi.sportti.fi/index.php?lid=20335</a>
-          <li>Valitse lajiliitoksi Suomen Paintball Liitto ry
-          <li>Täytä henkilötietosi ja valitse sinulle soveltuva vakuutus sekä seurasi/joukkueesi.
-          <li>Tarkista valitsemasi vakuutuksen tiedot ja tutustu Sporttiturvan tuoteselosteeseen ja vakuutusehtoihin. Vakuutusehdot tulee hyväksyä ennen siirtymistä maksamiseen.
-          <li>Tulosta tai tallenna lasku. Maksaessasi muista ehdottomasti käyttää viitenumeroa
+          <li>Rekister&ouml;idy Suomisport -paveluun: <a href="https://www.suomisport.fi">https://www.suomisport.fi</a></li>
+          <li>Saat s&auml;hk&ouml;postiin linkin, mill&auml; p&auml;&auml;set kirjautumaan. Tarkista ja p&auml;ivit&auml; tietosi.</li>
+          <li>Osta lisenssi, valitse Paintball</li>
+          <li>Valitse joukkue</li>
+          <li>Valitse lisenssi</li>
+          <li>Valitse sporttiturva vakuutus (ellei sinulla ole voimassaolevaa omaa, urheiluun sopivaa lisenssi&auml;)</li>
+          <li>Tutustu Sporttiturvan tuoteselosteeseen ja vakuutusehtoihin.</li>
+          <li>Maksa nettipankissa/luottokortilla/paypal:lla</li>
         </ol>
 
-        <p>Vakuutus on voimassa paintballissa, kilpailuissa ja harjoituksissa sekä näihin välittömästi liittyvien meno- ja paluumatkojen aikana, sekä ulkomaan pelimatkoilla.</p>
+        <h3>Lisenssityypit</h3>
 
-        <p>Tarkat korvaussummat, ehdot ja maksuohjeet löytyvät VALO:n sivulta (linkki yläpuolella). Vakuutuksen voivat hankkia myös ulkomaalaiset/ulkomailla asuvat.</p>
-
-        <p>Huom. Hoitokulujen korvaamisen edellytyksenä on, että tutkimus ja hoito on aloitettu Suomessa ja ovat lääkärin määräämiä.</p>
-
-        <h2>Lisenssityypit</h2>
-        <p>Vakuutuskausi: 1.5.2016 - 31.3.2017</p>
-
-        <h3>A-lisenssi, hinta 55€, <b>yli</b> 16-vuotiaat</h3>
-
-        <h3>B-lisenssi: hinta 32€, <b>alle</b> 16-vuotiaat</h3>
-
-        <h3>C-lisenssi: hinta 27€, ei sisällä vakuutusta</h3>
-
-        <h3>Kertavakuutus/lisenssi: hinta 15€, sekä alle 16, että 16 vuotta täyttäneet</h3>
+        <ul>
+          <li>A-lisenssi: yli 16-vuotiaat
+          <li>B1-lisenssi: 16-vuotta - 12 vuotiaat
+          <li>B2-lisenssi: alle 12 vuotiaat
+          <li>C-lisenssi: ei sis&auml;ll&auml; vakuutusta
+          <li>Kertavakuutus/-lisenssi: yhden viikonlopun ajaksi
+        </ul>
 
         <p>
-          Tarkista lisenssin sisältö tilatessasi lisenssiä VALO:n sivustolta.
+          Vakuutuskausi: 1.5. - 31.3. <br/>
+          Vakuutuksen toimittaa OP Vakuutus Oy
         </p>
 
+        <h3>Lis&auml;tietoja</h3>
+        
+        <p>
+          Lisenssit tullaan tarkistamaan ennen kierrosta. Pelaajilla tulee olla voimassaoleva lisenssi ja urheiluvakuutus.
+        </p>
 
-        <p></p>
+        <p>
+          Lisenssit tulee olla maksettuina jokaista SPBL:n kierrosta edelt&auml;v&auml;n&auml; keskiviikko iltana klo 18.00 menness&auml;, 
+          jolloin ohjelmasta ajetaan maksaneiden nimilistat. Mik&auml;li maksaa keskiviikon j&auml;lkeen, tulee toimittaa paperikuitti 
+          Kapteenien kokoukseen pelaajalistan mukana.
+        </p>
+        
+        <p>
+          Pelaajalla oltava voimassa oleva lisenssi ja sporttiturva/urheiluvakuutus. Pelkk&auml; vapaa-ajan tapaturmavakuutus ei 
+          kelpaa, sill&auml; vakuutusyhti&ouml;t eiv&auml;t korvaa tapaturmia lisenssin vaatimissa urheilulajeissa.
+        </p>
 
-        <h3>Lisätietoja</h3>
+        <p>
+          *Mik&auml;li k&auml;yt&auml;t oman vakutuusyhti&ouml;si urheiluvakuutusta (Pelkk&auml; C-lisenssi), toimita kopio voimassa olevasta vakuutuskirjasta 
+          lisenssivastaavalle ennen kauden ensimm&auml;ist&auml; kierrosta edelt&auml;v&auml;&auml; keskiiviikkona. Voit toimittaa vakuutuskirjan pdf-tiedostona 
+          alla olevaan s&auml;hk&ouml;postiin.
+        </p>
 
-        <p>Lisenssit tullaan tarkistamaan ennen kierrosta. Pelaajilla tulee olla voimassaoleva lisenssi ja urheiluvakuutus.</p>
+        <p>
+          Vakuutus on voimassa paintballissa, kilpailuissa ja harjoituksissa sek&auml; n&auml;ihin v&auml;litt&ouml;m&auml;sti liittyvien meno- ja paluumatkojen aikana, 
+          my&ouml;s ulkomaan pelimatkoilla (enint&auml;&auml;n 3 kuukkauden matka). Tarkat hinnat, vakuutuksen korvaussummat, ehdot ja maksuohjeet l&ouml;ytyv&auml;t 
+          lisenssi&auml; ostettaessa.
+        </p>
 
-        <p>Lisenssit tulee olla maksettuina jokaista SPBL:n kierrosta edeltävänä keskiviikko iltana klo 18.00 mennessä, jolloin ohjelmasta ajetaan maksaneiden nimilistat. Mikäli maksaa keskiviikon jälkeen, tulee toimittaa paperikuitti Kapteenien kokoukseen pelaajalistan mukana.</p>
-
-        <p>Pelaajalla oltava voimassa oleva <b>urheiluvakuutus</b> valitsemastaan
-        vakuutusyhtiästä. Pelkkä vapaa-ajan tapaturmavakuutus ei kelpaa, sillä
-        vakuutusyhtiät eivät korvaa tapaturmia lisenssin vaatimissa
-        urheilulajeissa. Mikäli käytät oman vakutuusyhtiäsi urheiluvakuutusta, toimita kopio voimassa olevasta vakuutuskirjasta lisenssivastaavalle ennen kauden ensimmäistä kierrosta edeltävää keskiiviikkona. Voit toimittaa vakuutuskirjan pdf-tiedostona Markku Nevalalle osoitteeseen
-        <a href="mailto:marneva2@elisanet.fi?Subjet=Vakuutuskirja" target="_top">marneva2@elisanet.fi</a></p>
-
-        <p>Lisätietoja tarvittaessa lisenssivastaavalta:</p>
+        
+        <p>Lis&auml;tietoja tarvittaessa lisenssivastaavalta:</p>
         <p>
           <i>
           Markku Nevala<br/>
@@ -106,29 +114,7 @@
 
         </div>
         <h2 role="presentation" class="eof text-center">&#8749;</h3>
-         <footer>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <a href="/"><img id="logo" alt="spbl.org logo" src="/images/logo-web.jpg"/></a>
-                <ul class="simple-list">
-                  <li class="active"><a href="/">Etusivu</a></li>
-                  <li><a href="/lajiesittely">Lajista</a></li>
-                  <li><a href="/tiedotteet">Tiedotteet</a></li>
-                  <li><a href="/julkaisut">Julkaisut</a></li>
-                  <li><a href="/tapahtumat">Tapahtumat</a></li>
-                  <li><a href="/joukkueet">Joukkueet</a></li>
-                  <li><a href="/yhteys">Yhteys</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-2 right">
-                spbl.org &copy; 2016
-              </div>
-            </div>
-          </div>
-        </footer>
+        <?php include('../footer.php');?>
         <!-- <script src="scripts/main.js"></script> -->
     </body>
 </html>

@@ -4,6 +4,7 @@ require('../wp-blog-header.php');
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
+	<?php include('../analytics.php'); ?>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>spbl.org</title>
@@ -65,7 +66,10 @@ require('../wp-blog-header.php');
              </thead>
              <tbody>
                <?php
-               $args = array('post_type' => 'tiedotteet');
+               $args = array(
+	         'post_type' => 'tiedotteet',
+		 'numberposts' => 20
+		);
                $all_posts = get_posts( $args );
                foreach( $all_posts as $post ){
                  echo '<tr>';
@@ -77,29 +81,7 @@ require('../wp-blog-header.php');
            </table>
        </div>
         </div>
-        <footer>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <a href="/"><img id="logo" alt="spbl.org logo" src="/images/logo-web.jpg"/></a>
-                <ul class="simple-list">
-                  <li class="active"><a href="/">Etusivu</a></li>
-                  <li><a href="/lajiesittely">Lajista</a></li>
-                  <li><a href="/tiedotteet">Tiedotteet</a></li>
-                  <li><a href="/julkaisut">Julkaisut</a></li>
-                  <li><a href="/tapahtumat">Tapahtumat</a></li>
-                  <li><a href="/joukkueet">Joukkueet</a></li>
-                  <li><a href="/yhteys">Yhteys</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-2 right">
-                spbl.org &copy; 2016
-              </div>
-            </div>
-          </div>
-        </footer>
+	<?php include('../footer.php');?>
         <!-- <script src="scripts/main.js"></script> -->
     </body>
 </html>

@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
+	<?php include('../analytics.php'); ?>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>spbl.org</title>
@@ -47,31 +48,31 @@
           <h1>Yhteystiedot</h1>
           <pre>
 Suomen Paintball-liitto Ry
-Ieskatu 13 A 1
-20210  TURKU
+Orvokki 2
+21500 Piikki&ouml;
 
 kai.siltala@elisanet.fi
-FI16 1140 3000 4116 89 - Suomen Paintball Liitto ry
+FI16 1140 3000 4116 89
           </pre>
           <h2>Liittohallituksen puheenjohtaja</h2>
           <p>Kai Siltala, Dream Team, p.0400-527 805, kai.siltala@elisanet.fi</p>
-          <h2>Hallituksen jäsnenet</h2>
+          <h2>Hallituksen j&#228;snenet</h2>
           <p>
             Markku Nevala, Trivoga<br/>
-            Thomas Welin, PPW<br/>
             Pertti Berg, Cyclone<br/>
             Jesper Raevaara, Urho<br/>
+	    Tero Kettu, PH Paintball<br/>
           </p>
           <h2>Lisenssivastaava</h2>
           <p>Markku Nevala /  marneva2@elisanet.fi / 040-5110 692</p>
           <h2>Rahastonhoitaja</h2>
-          <p>Jyrki Åland / jyrki.ooland@jippii.fi / 044-2864782</p>
+          <p>Jarno Hiltunen / jarnohi@gmail.com</p>
           <h2>Tiedotusvastaava</h2>
-          <p>Paulus Parkatti / parkatti.paulus@gmail.com / 050 - 320 1947</p>
+          <p>Paulus Parkatti / parkatti.paulus@gmail.com </p>
           <h2>Verkkosivut</h2>
           <p>
             Tuomas Soikkeli, tsoikkeli@gmail.com<br/>
-            Lähdekoodi on saativilla osoitteesta <a href="https://github.com/t-my/spbl.org">https://github.com/t-my/spbl.org</a>
+            L&#228;hdekoodi on saativilla osoitteesta <a href="https://github.com/t-my/spbl.org">https://github.com/t-my/spbl.org</a>
           </p>
 
         </div>
@@ -90,11 +91,6 @@ FI16 1140 3000 4116 89 - Suomen Paintball Liitto ry
                   <li><a href="/joukkueet">Joukkueet</a></li>
                   <li><a href="/yhteys">Yhteys</a></li>
                 </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-2 right">
-                spbl.org &copy; 2016
               </div>
             </div>
           </div>
